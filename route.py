@@ -258,7 +258,7 @@ def post():
         author=current_user
         title = request.form.get('title')
         content = request.form.get('content')
-        meta_data = ' '.join(content.split()[:10])
+        meta_data = ' '.join(content.split()[:100])
         # sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', content)
         # meta_data = ' '.join(sentences[:1])  # Join the first two sentences into a single string
     
