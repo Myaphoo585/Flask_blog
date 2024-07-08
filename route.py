@@ -330,7 +330,7 @@ def logout():
 #about route
 @app.route("/about")
 def about():
-    return redirect(url_for("about"))
+    return render_template('about.html')
 
 #comfirmationemail route
 @app.route('/commail',methods=['GET', 'POST'])

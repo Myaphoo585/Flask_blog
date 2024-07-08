@@ -177,7 +177,7 @@
               <li
                 class="page-item {% if post.page == page_num %}active{% endif %}"
               >
-                <a class="page-link" href="?page={{ page_num }}" style="background-color: #445e91"
+                <a class="page-link" href="?page={{ page_num }}" style="background-color: #DCA47C"
                   >{{ page_num }}</a
                 >
               </li>
@@ -227,6 +227,7 @@
             </div>
           </div>
           <div class="profileDetail">
+            <br>
             <h1>{{user.username}}</h1>
             <h5>{{ user.bio }}</h5>
             <br />
@@ -240,8 +241,8 @@
     <i class="fa-solid fa-bell"></i> Activity Log
   </h5>
   <ul class="list-group">
-    <a href="{{ url_for('logout') }}" class="list-group-item list-group-item-action">Log Out</a>
-    <a href="{{ url_for('profile_edit') }}" class="list-group-item list-group-item-action">Setup Profile</a>
+    <a href="{{ url_for('logout') }}" class="button-link">Log Out</a>
+    <a href="{{ url_for('profile_edit') }}" class="button-link">Setup Profile</a>
   </ul>
             </div>
             {% endif %}

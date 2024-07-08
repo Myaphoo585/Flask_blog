@@ -89,7 +89,7 @@
 
 .bg-black-cover {
   height: 200px;
-  background: rgb(222, 211, 211);
+  background:  #DCA47C;
 }
 
 .profile-pic {
@@ -135,6 +135,21 @@ h1 {
   border-bottom: 1.4px solid #262626;
   position: absolute;
   right: 30px;
+}
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #837e67; /* Bootstrap primary color */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #dca47c; /* Darker shade for hover effect */
 }
 
 .profile {
