@@ -74,7 +74,7 @@
               class="nav-link"
               href="{{ url_for('full_post',post_id=popular_post.id) }}"
             >
-              <h5 class="card-title" id="popular">{{popular_post.title}}</h5>
+              <h3 class="card-title" id="popular">{{popular_post.title}}</h3>
               <p class="card-text" id="card-description">
                 {{popular_post.meta |safe }}
               </p>
@@ -91,7 +91,7 @@
             </a>
           </div>
 
-          <div class="card-end" style="border-bottom: #958787 solid 1px"></div>
+          <div class="card-end" style="border-bottom: #958787 solid 1px; margin-bottom: 10px;"></div>
 
           <div class="card-end"></div>
         </div>
