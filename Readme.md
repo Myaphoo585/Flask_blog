@@ -18,7 +18,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 1. Clone the repository:
-    git clone https://github.com/yourusername/blink-blog.git
+    git clone https://github.com/Myaphoo585/flask_blog.git
     
 
 2. Create a virtual environment:
@@ -32,7 +32,8 @@ Before you begin, ensure you have met the following requirements:
 
 4. Run the application:
     python app.py
- The application will be available at http://127.0.0.1:5000.
+ 
+The application will be available at http://127.0.0.1:5000.
 
 
 
