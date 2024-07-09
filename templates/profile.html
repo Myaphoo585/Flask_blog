@@ -19,6 +19,14 @@
   </head>
   <body>
     {% include 'topnav.html' %}
+    {# Flashing message start here #} {% with messages =
+      get_flashed_messages(with_categories=true) %} {% if messages %}
+      <div class="flashes">
+        {% for category, message in messages %}
+        <div class="{{ category }}" style="display: flex; justify-content: center;">{{ message }}</div>
+        {% endfor %}
+      </div>
+      {% endif %} {% endwith %} {# Flashing message ends here #}
 
     <div class="container">
       <div class="row">
