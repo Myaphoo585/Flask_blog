@@ -135,20 +135,21 @@
 .profile-image img {
   border-radius: 50%;
 }
+/* Adjusted styles for sidenav and footer */
 #right-column {
-  position: -webkit-sticky; /* For Safari */
   position: sticky;
   top: 0;
-
-  overflow-y: auto;
-  padding-top: 20px; /* Adjust as needed */
+  height: 100vh; /* Adjust height as needed */
+  overflow-y: auto; /* Allow vertical scrolling if necessary */
+  z-index: 2; /* Ensure it's above other content */
 }
+
 footer {
-  width: 100%; /* Ensure navbar spans the full width */
+  width: 100%;
   color: #eee;
   padding: 10px;
   text-align: center;
-  z-index: 100;
+  z-index: 3; /* Ensure footer is above everything */
 }
 
 ul {
@@ -361,15 +362,7 @@ ul {
 }
 
 /* Right Column Styles */
-#right-column {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: hidden;
-  padding-top: 20px; /* Adjust as needed */
-  z-index: 1;
-}
+
 
 .more-link {
   color: #3d95eb; /* Set link color to blue */

@@ -87,8 +87,8 @@
                 class="nav-link"
                 href="{{ url_for('full_post',post_id=post.id) }}"
               >
-                <div class="col-sm-12">
-                  <h2 class="card-title">{{post.title}}</h2>
+                
+                  <h3 class="card-title">{{post.title}}</h3>
                   <p class="card-text" id="card-description">
                     {{post.meta | safe}}
                   </p>
@@ -101,15 +101,15 @@
                         >{{post.tag}}
                       </a>
                     </ul>
-                  </div>
+                  
                 </div>
                 </a>
               </div>
             </div>
-            <br />
+            
             <div
               class="card-end"
-              style="border-bottom: #958787 solid 1px; margin-bottom: 20px"
+              style="border-bottom: #958787 solid 1px;"
             ></div>
             {% endfor %}
           </div>
