@@ -18,18 +18,20 @@ Before you begin, ensure you have met the following requirements:
 
 ## Installation
 1. Clone the repository:
-    : git clone https://github.com/yourusername/blink-blog.git
-    : cd blink-blog
+    git clone https://github.com/yourusername/blink-blog.git
+    
 
-2. Create and activate a virtual environment:
-    : python -m venv venv
-    : source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+2. Create a virtual environment:
+    python -m venv <env_name>
+
+3. Activate a virtual environment:
+    <env_name>/bin/activate   # On Windows, use `venv\Scripts\activate`
 
 3. Install the dependencies:
-    : pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. Run the application:
-    : python app.py
+    python app.py
  The application will be available at http://127.0.0.1:5000.
 
 
