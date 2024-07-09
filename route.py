@@ -103,7 +103,8 @@ def profile(user_id,limit=2):
 
   
 
-    return render_template('profile.html', user_id=user_id,user=user,picture_url=picture_url,user_posts=user_posts,form=forms,post=post,tags=unique_tags,popular_posts=popular_posts)
+    return render_template('profile.html', user_id=user_id,user=user,picture_url=picture_url,
+                           user_posts=user_posts,form=forms,post=post,tags=unique_tags,popular_posts=popular_posts)
 
 
 @app.route('/profile/upload', methods=['GET', 'POST'])
@@ -361,7 +362,7 @@ def confirm_email(token):
             db.session.commit()
             # return render_template('test.html',existing_user = existing_user)
             return redirect(url_for('login'))
-    return render_template('resetpw.html',reset_form = reset_form)
+    return render_template('reset.html',reset_form = reset_form)
 
 
 
