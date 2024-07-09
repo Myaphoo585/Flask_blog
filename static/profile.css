@@ -347,3 +347,26 @@ h1 {
 .tag:hover {
   background-color: #ccc;
 }
+.flashes {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.success {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.error {
+  background-color: #f44336; /* Red background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
