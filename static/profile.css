@@ -234,14 +234,8 @@ h1 {
   -webkit-line-clamp: initial; /* Show all lines when expanded */
 }
 
-.card-end a {
-  margin-left: 10px;
-  margin-bottom: 10px;
-  border-radius: 200px;
-}
-.card-end {
-  border-bottom: 1px solid #ccc; /* Add bottom border for consistency */
-}
+
+
 
 #activity-log {
   color: rgb(7, 7, 7);
