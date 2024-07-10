@@ -165,7 +165,7 @@ def get_posts(page, per_page, tag=None):
 #home route
 @app.route('/home',methods=['GET', 'POST'])
 @login_required
-def home(limit=2):
+def home(limit=8):
     # post=Post()
     # tags = post.tag
     page = request.args.get('page', 1, type=int)
@@ -189,7 +189,7 @@ def home(limit=2):
 
 @app.route('/home/<string:tag>', methods=['GET', 'POST'])
 @login_required
-def home_tag(tag,limit=2):
+def home_tag(tag,limit=5):
     page = request.args.get('page', 1, type=int)
     per_page = 10  # Number of posts per page
     
@@ -210,7 +210,8 @@ def home_tag(tag,limit=2):
 #search_result route
 @app.route('/search_result',methods=['GET', 'POST'])
 @login_required
-def search_result(limit=2):
+def search_result(limit=5):
+     post =Post()
      forms=SearchForm()
      query = forms.search.data
     
@@ -391,12 +392,12 @@ def signup():
 #full_post route
 @app.route("/full_post/<int:post_id>",methods=['GET', 'POST'])
 @login_required
-def full_post(post_id,limit=2):
+def full_post(post_id):
     post = Post.query.get_or_404(post_id)
     unique_tags = list(set(tag for tag, in Post.query.with_entities(Post.tag).distinct().limit(15)))
 
      # get 5 popular post by like count
-    popular_posts = Post.query.order_by(Post.likes.desc()).limit(limit).all()
+    popular_posts = Post.query.order_by(Post.likes.desc()).limit(5).all()
 
     comment_form = CommentForm()
     forms=SearchForm()

@@ -139,9 +139,15 @@
 #right-column {
   position: sticky;
   top: 0;
+<<<<<<< HEAD
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 20px; /* Adjust as needed */
+=======
   height: 100vh; /* Adjust height as needed */
   overflow-y: auto; /* Allow vertical scrolling if necessary */
   z-index: 2; /* Ensure it's above other content */
+>>>>>>> cee2026eda491f9570aa8c205d9d9927a3dd38c7
 }
 
 footer {
