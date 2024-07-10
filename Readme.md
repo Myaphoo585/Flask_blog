@@ -35,7 +35,11 @@ Before you begin, ensure you have met the following requirements:
  
 The application will be available at http://127.0.0.1:5000.
 
-## Demo
+[Demo](static/demo.mp4)
+
+
+https://github.com/Myaphoo585/flask_blog/assets/173982685/e3b9245e-a845-4453-8e6d-e8ac5c449374
+
 
 
 
