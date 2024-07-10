@@ -164,6 +164,7 @@ button:hover {
 #password:not(:placeholder-shown) + .eye-icon {
   visibility: visible;
 }
+
 /* Add transition to the login container */
 .login-container.dimmed {
   opacity: 0.5; /* Reduced opacity for background */
